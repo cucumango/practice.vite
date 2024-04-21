@@ -10,5 +10,10 @@ export default defineConfig({
             { find: '@', replacement: '/src' },
         ],
     },
-    envPrefix: "__"
+    envPrefix: '__',
+    server: {
+        watch: {
+            usePolling: true,
+        },
+    },
 });
